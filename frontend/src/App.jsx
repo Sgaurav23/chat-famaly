@@ -9,7 +9,7 @@ function App() {
   return (
     <Router>
       <div className="app-container">
-        <header className="app-header">
+        <header className="title">
           <h1>Chat-Famaly</h1>
         </header>
         <nav className="navbar">

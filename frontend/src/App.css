@@ -176,3 +176,57 @@ body {
   flex: 1;
   margin: 10px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Body Styling */
+body {
+  background: linear-gradient(120deg, #0f2f46, #8f0a3d); /* Gradient background */
+  background-size: 200% 200%;
+  animation: gradientAnimation 5s ease infinite; /* Animate the gradient */
+  color: #E0E0E0; /* Light text color */
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Fancy Title Styling */
+.fancy-title {
+  font-size: 3.5rem; /* Large font size */
+  color: transparent; /* Make text transparent to see the gradient */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 900; /* Extra bold font weight */
+  letter-spacing: 3px; /* Spacing between letters */
+  transition: color 0.3s ease-in-out; /* Smooth color transition */
+  font-family: 'Pacifico', cursive; /* Fancy cursive font */
+  background: linear-gradient(90deg, #FF6FD8, #3813C2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.fancy-title:hover {
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7); /* Enhanced shadow on hover */
+}
+
+/* Gradient Animation */
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
