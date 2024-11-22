@@ -1,0 +1,206 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #121212; /* Dark background */
+  color: #E0E0E0; /* Bright text color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.app-container {
+  text-align: center;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #1F1F1F; /* Darker background */
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7); /* Darker shadow */
+}
+
+.block {
+  margin: 20px 0; /* Spacing between blocks within the container */
+  padding: 20px;
+  background-color: #2C2C2C; /* Slightly lighter background for blocks */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Consistent shadow */
+}
+
+.app-header {
+  color: #BB86FC;
+  padding: 20px;
+  background-color: #333333; /* Header background */
+  border-radius: 10px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: #444444;
+  border-radius: 10px;
+  margin-bottom: 20px; /* Added margin below navbar */
+}
+
+.navbar a {
+  padding: 14px 20px;
+  display: block;
+  color: #BB86FC;
+  text-align: center;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #6200EE; /* Vibrant accent color */
+  color: #FFFFFF;
+}
+
+.content {
+  padding: 20px;
+}
+
+.form-container input {
+  width: 100%;
+  padding: 15px; /* Increased padding */
+  margin: 10px 0;
+  border: 2px solid #BB86FC;
+  border-radius: 10px;
+  background-color: #333333;
+  color: #E0E0E0;
+  font-size: 16px; /* Increased font size */
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.5), inset -2px -2px 5px rgba(255, 255, 255, 0.1); /* Inner shadow */
+  transition: border 0.2s, box-shadow 0.2s; /* Smooth transition */
+}
+
+.form-container input:focus {
+  border: 2px solid #6200EE; /* Border color on focus */
+  box-shadow: inset 2px 2px 8px rgba(0, 0, 0, 0.7), inset -2px -2px 8px rgba(255, 255, 255, 0.2); /* Enhanced inner shadow on focus */
+  outline: none; /* Remove default outline */
+}
+
+.form-container button {
+  width: 100%;
+  padding: 15px; /* Increased padding */
+  background-color: #6200EE;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px; /* Increased font size */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5), -2px -2px 5px rgba(255, 255, 255, 0.1); /* Outer shadow */
+  transition: background-color 0.2s, transform 0.2s, box-shadow 0.2s; /* Smooth transition */
+}
+
+.form-container button:hover {
+  background-color: #3700B3;
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.5), -3px -3px 7px rgba(255, 255, 255, 0.2); /* Enhanced shadow on hover */
+}
+
+.user-profile, .user-list, .chat {
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  color: #E0E0E0;
+  background-color: #2C2C2C; /* Match block background */
+}
+
+.user-profile h3, .user-list h3, .chat h3 {
+  margin: 0 0 20px 0;
+  font-size: 24px;
+  color: #BB86FC;
+  text-align: center;
+}
+
+.chat-messages {
+  max-height: 400px;
+  overflow-y: auto;
+  margin-bottom: 20px;
+  padding-right: 10px;
+  background-color: #333333; /* Darker message background */
+  border-radius: 10px; /* Rounded corners */
+  padding: 10px; /* Padding for spacing */
+}
+
+.message {
+  padding: 15px; /* Increased padding */
+  margin: 10px 0;
+  border-radius: 10px;
+  background-color: #3C3C3C;
+  word-wrap: break-word;
+  color: #E0E0E0;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5), -2px -2px 5px rgba(255, 255, 255, 0.1); /* Message shadow */
+}
+
+.message.sent {
+  background-color: #4CAF50;
+  text-align: right;
+  color: #FFFFFF;
+}
+
+.message.received {
+  background-color: #444444;
+}
+
+.message strong {
+  display: block;
+  color: #FFD700;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.chat-input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px; /* Add padding around the chat input area */
+  border-top: 1px solid #444444; /* Add a border on top */
+  background-color: #2C2C2C; /* Background color for chat input area */
+  border-radius: 0 0 10px 10px; /* Round the bottom corners */
+}
+
+.chat-input input[type="text"] {
+  flex-grow: 1;
+  padding: 15px; /* Increase padding for a larger clickable area */
+  margin-right: 10px;
+  border: 2px solid #BB86FC; /* Thicker border */
+  border-radius: 25px; /* More rounded corners */
+  color: #E0E0E0;
+  background-color: #333333;
+  font-size: 16px; /* Increase font size */
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.5), inset -2px -2px 5px rgba(255, 255, 255, 0.1); /* Inner shadow */
+  transition: border 0.2s, box-shadow 0.2s; /* Smooth transition for interactions */
+}
+
+.chat-input input[type="text"]:focus {
+  border: 2px solid #6200EE; /* Change border color on focus */
+  box-shadow: inset 2px 2px 8px rgba(0, 0, 0, 0.7), inset -2px -2px 8px rgba(255, 255, 255, 0.2); /* Enhance inner shadow on focus */
+  outline: none; /* Remove default outline */
+}
+
+.chat-input button {
+  padding: 15px 20px; /* Increase padding for a larger clickable area */
+  background-color: #6200EE;
+  color: white;
+  border: none;
+  border-radius: 25px; /* More rounded corners */
+  cursor: pointer;
+  font-size: 16px; /* Increase font size */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5), -2px -2px 5px rgba(255, 255, 255, 0.1); /* Outer shadow */
+  transition: background-color 0.2s, transform 0.2s, box-shadow 0.2s; /* Smooth transition for interactions */
+}
+
+.chat-input button:hover {
+  background-color: #3700B3;
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.5), -3px -3px 7px rgba(255, 255, 255, 0.2); /* Enhance outer shadow on hover */
+}
+
+.chat-input button:active {
+  transform: scale(0.95); /* Slightly shrink on click */
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5), -1px -1px
+  }

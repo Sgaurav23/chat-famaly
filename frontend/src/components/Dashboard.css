@@ -1,0 +1,152 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #121212; /* Dark background */
+  color: #E0E0E0; /* Bright text color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.app-container {
+  text-align: center;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #1F1F1F; /* Darker background */
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7); /* Darker shadow */
+}
+
+.block {
+  margin: 20px 0; /* Spacing between blocks within the container */
+  padding: 20px;
+  background-color: #2C2C2C; /* Slightly lighter background for blocks */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Consistent shadow */
+}
+
+.app-header {
+  color: #BB86FC;
+  padding: 20px;
+  background-color: #333333; /* Header background */
+  border-radius: 10px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: #444444;
+  border-radius: 10px;
+  margin-bottom: 20px; /* Added margin below navbar */
+}
+
+.navbar a {
+  padding: 14px 20px;
+  display: block;
+  color: #BB86FC;
+  text-align: center;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #6200EE; /* Vibrant accent color */
+  color: #FFFFFF;
+}
+
+.content {
+  padding: 20px;
+}
+
+.form-container input {
+  width: 100%;
+  padding: 15px; /* Increased padding */
+  margin: 10px 0;
+  border: 2px solid #BB86FC;
+  border-radius: 10px;
+  background-color: #333333;
+  color: #E0E0E0;
+  font-size: 16px; /* Increased font size */
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.5), inset -2px -2px 5px rgba(255, 255, 255, 0.1); /* Inner shadow */
+  transition: border 0.2s, box-shadow 0.2s; /* Smooth transition */
+}
+
+.form-container input:focus {
+  border: 2px solid #6200EE; /* Border color on focus */
+  box-shadow: inset 2px 2px 8px rgba(0, 0, 0, 0.7), inset -2px -2px 8px rgba(255, 255, 255, 0.2); /* Enhanced inner shadow on focus */
+  outline: none; /* Remove default outline */
+}
+
+.form-container button {
+  width: 100%;
+  padding: 15px; /* Increased padding */
+  background-color: #6200EE;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px; /* Increased font size */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5), -2px -2px 5px rgba(255, 255, 255, 0.1); /* Outer shadow */
+  transition: background-color 0.2s, transform 0.2s, box-shadow 0.2s; /* Smooth transition */
+}
+
+.form-container button:hover {
+  background-color: #3700B3;
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.5), -3px -3px 7px rgba(255, 255, 255, 0.2); /* Enhanced shadow on hover */
+}
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+  width: 100%;
+}
+
+.dashboard h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #BB86FC; /* Bright text color */
+}
+
+.dashboard-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  overflow: hidden; /* Prevents overflow */
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 300px;
+  max-height: 80vh; /* Limits height to viewport */
+  overflow-y: auto; /* Adds vertical scroll if needed */
+  background-color: #2C2C2C; /* Darker sidebar background */
+  color: #E0E0E0; /* Bright text color */
+}
+
+.user-list, .chat {
+  flex: 1;
+  background-color: #2C2C2C; /* Dark background */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Stronger shadow for contrast */
+  color: #E0E0E0; /* Bright text color */
+}
+
+.chat {
+  flex-grow: 2;
+  max-height: 80vh; /* Limits height to viewport */
+  overflow-y: auto; /* Adds vertical scroll if needed */
+}
